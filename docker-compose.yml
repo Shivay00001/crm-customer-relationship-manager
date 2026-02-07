@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  crm-app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=crm-db
+      - DB_USER=admin
+      - DB_PASSWORD=secret
+      - DB_NAME=crm
+    depends_on:
+      - crm-db
+
+  crm-db:
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=crm
+    ports:
+      - "5432:5432"
