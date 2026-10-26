@@ -47,3 +47,7 @@ docker-compose up --build
 ## 📄 License
 
 MIT License
+
+## Built by VisionQuantech
+
+Part of the [VisionQuantech](https://visionquantech.com/) AI automation studio. See [AI automation services](https://visionquantech.com/ai-automation-services) and [AI automation in Australia](https://visionquantech.com/ai-automation-australia).
